@@ -41,7 +41,10 @@ class App extends Component {
           <h1 className="App-title">Gallery of my life</h1>
         </header>
         {/* connects to App.js */}
-        <GalleryList galleryList={this.state.galleryList} />
+        <GalleryList
+          galleryList={this.state.galleryList}
+          updateImageLikes={this.state.updateImageLikes}
+        />
         <br />
         <p>Gallery goes here</p>
         <img src="images/goat_small.jpg" />
