@@ -27,9 +27,9 @@ class App extends Component {
   // When button is clicked, number of likes will update
   updateImageLikes = (id) => (event) => {
     axios
-      .put(`/gallery/likes/${id}`)
+      .put(`/gallery/like/${id}`)
       .then((response) => {
-        this.setState({
+        this.getImages({
           galleryList: response.data,
         });
       })
