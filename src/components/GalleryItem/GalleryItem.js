@@ -3,7 +3,14 @@ import "./GalleryItem.css";
 
 class GalleryItem extends Component {
   render() {
-    return <p>{this.props.item.description}</p>;
+    return (
+      <div>
+        <img src={this.props.item.path} alt={this.props.item.description} />
+        <button> LIKE</button>
+        <p>{this.props.item.likes} Love this photo</p>
+        <p>{this.props.item.description} </p>;
+      </div>
+    );
   }
   // let buttonElement = <div></div>;
   // console.log("not working", buttonElement);
