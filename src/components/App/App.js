@@ -26,7 +26,7 @@ class App extends Component {
   // When button is clicked, number of likes will update
   updateImageLikes = (id) => (event) => {
     axios
-      .put(`/gallery/like/${id}`)
+      .put(`/gallery/likes/${id}`)
       .then((response) => {
         this.setState({
           galleryList: response.data,
@@ -34,6 +34,7 @@ class App extends Component {
       })
       .catch((err) => console.log(err));
   };
+
   render() {
     return (
       <div className="App">
@@ -43,7 +44,7 @@ class App extends Component {
         {/* connects to App.js */}
         <GalleryList
           galleryList={this.state.galleryList}
-          updateImageLikes={this.state.updateImageLikes}
+          updateImageLikes={this.updateImageLikes}
         />
         <br />
         <p>Gallery goes here</p>
