@@ -4,6 +4,9 @@ import axios from "axios";
 import GalleryList from "../GalleryList/GalleryList";
 
 class App extends Component {
+  state = {
+    galleryList: [],
+  };
   componentDidMount() {
     this.getImages();
   }
@@ -12,7 +15,9 @@ class App extends Component {
     axios
       .get("gallery")
       .then((response) => {
-        console.log(response.data);
+        this.setState({
+          galleryList: response.data,
+        });
       })
       .catch((err) => console.warn(err));
   }
@@ -22,7 +27,7 @@ class App extends Component {
         <header className="App-header">
           <h1 className="App-title">Gallery of my life</h1>
         </header>
-        <GalleryList />
+        <GalleryList galleryList={this.state.galleryList} />
         <br />
         <p>Gallery goes here</p>
         <img src="images/goat_small.jpg" />

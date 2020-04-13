@@ -2,7 +2,14 @@ import React, { Component } from "react";
 
 class GalleryList extends Component {
   render() {
-    return <div></div>;
+    const galleryArray = this.props.galleryList.map((item, index) => {
+      return (
+        <div>
+          <p> {item.gallery}</p>
+        </div>
+      );
+    });
+    return <div>{galleryArray}</div>;
   }
 }
 
