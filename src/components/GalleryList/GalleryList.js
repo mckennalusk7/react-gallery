@@ -7,14 +7,11 @@ class GalleryList extends Component {
     const galleryArray = this.props.galleryList.map((item, index) => {
       return (
         <div key={index}>
-          <GalleryItem item={item} />
+          <GalleryItem
+            item={item}
+            updateImageLikes={this.props.updateImageLikes}
+          />
         </div>
-
-        /* <GalleryItem
-          key={index}
-          item={item}
-          updateImageLikes={this.props.updateImageLikes}
-        /> */
       );
     });
 
