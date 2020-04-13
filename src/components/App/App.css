@@ -8,6 +8,8 @@
   height: 70px;
   padding: 20px;
   color: white;
+  text-shadow: 2px 2px 5px black;
+  box-shadow: 6px black;
 }
 
 .App-title {
