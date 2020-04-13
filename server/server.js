@@ -11,22 +11,6 @@ app.use(express.static("build"));
 /** ---------- EXPRESS ROUTES ---------- **/
 app.use("/gallery", gallery);
 
-// PUT ROUTE
-router.put("/likes/:id", (req, res) => {
-  console.log(req.params.id);
-
-  res.sendStatus(200);
-});
-
-//  GET ROUTE
-router.get(
-  "/",
-  (req,
-  (res) => {
-    res.send;
-  })
-);
-
 /** ---------- START SERVER ---------- **/
 app.listen(PORT, () => {
   console.log("Listening on port: ", PORT);

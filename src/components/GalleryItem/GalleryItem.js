@@ -4,10 +4,14 @@ import "./GalleryItem.css";
 class GalleryItem extends Component {
   render() {
     let buttonElement = <div></div>;
+    console.log("not working", buttonElement);
 
-    if (!this.props.item.complete) {
+    if (this.props.item.complete) {
       buttonElement = (
-        <button onClick={this.props.updateImageLikes(this.props.item.id)}>
+        <button
+          className="gallery-like-btn"
+          onClick={this.props.updateImageLikes(this.props.item.id)}
+        >
           LIKE!
         </button>
       );

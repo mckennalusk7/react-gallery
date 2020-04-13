@@ -47,7 +47,7 @@ class App extends Component {
           updateImageLikes={this.updateImageLikes}
         />
         <br />
-        <p>Gallery goes here</p>
+        <p>Dis Dat GOAT!</p>
         <img src="images/goat_small.jpg" />
       </div>
     );
