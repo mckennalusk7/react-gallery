@@ -20,12 +20,14 @@ class GalleryItem extends Component {
       imageElement = <p>{this.props.item.description}</p>;
     }
     return (
-      <div>
+      <div className="galleryitem-cell">
         <div onClick={this.toggleImage}>{imageElement}</div>
-        <button onClick={this.props.updateImageLikes(this.props.item.id)}>
-          {" "}
-          LIKE
-        </button>
+        <div className="imagelike-btn">
+          <button onClick={this.props.updateImageLikes(this.props.item.id)}>
+            {" "}
+            LIKE
+          </button>
+        </div>
         <p>{this.props.item.likes} Love this photo</p>
         <p>{this.props.item.description} </p>
       </div>

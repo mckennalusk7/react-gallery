@@ -1,3 +1,17 @@
+.galleryitem-cell {
+  margin: 25px;
+}
+
+button {
+  background-color: rgb(251, 137, 117);
+  padding: 6px 8px;
+  text-align: center;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 18px;
+  border: 4px solid black;
+  border-radius: 12px;
+}
+
 img {
   width: 450px;
 }
