@@ -1,15 +1,22 @@
 const galleryItems = [
   {
     id: 1,
-    path: "images/goat_small.jpg",
-    description: "Photo of a goat taken at Glacier National Park.",
+    path: "images/chanel_mexico.jpg",
+    description: "Photo of Chanel in Mexico.",
     likes: 0,
   },
 
   {
     id: 2,
-    path: "images/chanel_mexico.jpg",
-    description: "Photo of Chanel in Mexico.",
+    path: "images/family.jpg",
+    description: "The Squad.",
+    likes: 0,
+  },
+
+  {
+    id: 2,
+    path: "images/skiing.jpg",
+    description: "I love the outdoors.",
     likes: 0,
   },
 ];
