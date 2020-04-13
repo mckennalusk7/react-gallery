@@ -14,8 +14,9 @@ class App extends Component {
   // GET data from server and update data in galleryList
   getImages() {
     axios
-      .get("gallery")
+      .get("/gallery")
       .then((response) => {
+        console.log(response.data);
         this.setState({
           galleryList: response.data,
         });
@@ -47,8 +48,6 @@ class App extends Component {
           updateImageLikes={this.updateImageLikes}
         />
         <br />
-        <p>Dis Dat GOAT!</p>
-        <img src="images/goat_small.jpg" />
       </div>
     );
   }
